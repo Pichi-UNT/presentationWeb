@@ -1,0 +1,159 @@
+.presentation{
+    height: 90vh;
+    width: 100%;
+
+}
+
+.presentation-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--secundary-color)
+   
+}
+.presentation-img{
+    background-image:url("../resources/fondo.png") ;
+    background-repeat: no-repeat;
+    background-size: 100%,100%;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+
+}
+.presentation-img-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 3%;
+}
+
+
+.presentation-text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 4%;
+    background: var(--secundary-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-text{
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #76d0f7;
+    border-radius: 2em;
+    box-shadow: 1.5vw 1vh 0px 10px rgba(17, 150, 212, 0.205);
+    
+}
+
+.presentation-text h1{
+    font-size: 2.7em;
+    font-family: "Teko";
+}
+
+.presentation-text p{
+    line-height:1em;
+    font-size: 2.2em;
+    font-family: "Teko";
+}
+
+.btn-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    column-gap: 15%;
+
+}
+.btn{
+    flex-basis: 30%;
+    height: 50%;
+    cursor: pointer;
+    border: 3px inset #38a8d8;
+    border-radius: 50px 50px 50px 50px;
+    font-size: 1em;
+   
+    
+}
+.btn img{
+    height: 100%;
+}
+
+.btn:hover{
+    background-color: #3ebdf3;
+    background-color: #b8eaff;
+}
+@media (min-width: 576px) {
+    .presentation-text h1{
+        font-size: 4em;
+        font-family: "Teko";
+    }
+    
+    .presentation-text p{
+        line-height:1em;
+        font-size: 4em;
+        font-family: "Teko";
+    }
+    .presentation-text-container{
+        height: fit-content;
+    }
+
+}
+
+@media (min-width: 768px){
+
+    .presentation-text h1{
+        line-height:1em;
+        font-size: 4em;
+        font-family: "Teko";
+    }
+    
+    .presentation-text p{
+        line-height:1em;
+        font-size: 3em;
+        font-family: "Teko";
+    }
+
+    .presentation-img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+@media (min-width: 1200px){
+    .presentation{
+        height: 90vh !important;
+    }
+
+    .presentation-text-container{
+        height: 75%;
+        background: none;
+     }
+ 
+     .presentation-container{
+         flex-direction: row;
+         background-image:url("../resources/fondo2.png") ;
+         background-repeat: no-repeat;
+         background-size: 100%,100%;
+     }
+
+     .presentation-img-container{
+         order: 1;
+     }
+
+     .presentation-img{
+        background-image: none;
+    }
+
+    .presentation{
+        height: 85vh;
+    }
+    
+
+}
