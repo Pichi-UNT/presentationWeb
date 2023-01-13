@@ -57,6 +57,9 @@
 }
 
 @media (min-width: 1200px){
+    footer{
+        display: block;
+    }
     .footer{
         background-color: var(--secundary-color);
     }
